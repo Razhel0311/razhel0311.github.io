@@ -1,12 +1,74 @@
 <html>
 
 <head>
+    
     <title> My Awesome Tic Tac Toe</title>
-</head>
+    
+    <script type="text/javascript">
+    function help() {
+        alert ("help")  ;
+    }
+        
+     function clearOut() {
+        alert ("clearOut")  ;
+    }
+        
+     function playAgain() {
+        alert ("playAgain")  ;
+    }
+    </script>
+
+    
+    </head>
 <body>
-    <form name=game>
+    <form name="game">
+    <table border=1>
+        <tr>
+            <td><a href="javascripy:yourChoice( 'A' )"><img src="blank.jpg" border=0 height=100 name=A alt="Top-left"/></a></td>
+            <td><a href="javascripy:yourChoice( 'B' )"><img src="blank.jpg" border=0 height=100 name=B alt="B"/></a></td>
+            <td><a href="javascripy:yourChoice( 'C' )"><img src="blank.jpg" border=0 height=100 name=C alt="C"/></a></td>
+        </tr>
+             
+        <tr>
+            <td><a href="javascripy:yourChoice( 'D' )"><img src="blank.jpg" border=0 height=100 name=D alt="D"/></a></td>
+            <td><a href="javascripy:yourChoice( 'E' )"><img src="blank.jpg" border=0 height=100 name=E alt="E"/></a></td>
+            <td><a href="javascripy:yourChoice( 'F' )"><img src="blank.jpg" border=0 height=100 name=F alt="F"/></a></td>
+        </tr>
+             
+        <tr>
+            <td><a href="javascripy:yourChoice( 'G' )"><img src="blank.jpg" border=0 height=100 name=G alt="G"/></a></td>
+            <td><a href="javascripy:yourChoice( 'H' )"><img src="blank.jpg" border=0 height=100 name=H alt="H"/></a></td>
+            <td><a href="javascripy:yourChoice( 'I' )"><img src="blank.jpg" border=0 height=100 name=I alt="I"/></a></td>
+        </tr>
+             
+        <tr>
+            <td><input type="button" 
+                       value="Play Again" 
+                       onClick="playAgain()">
+        </input></td>
+            
+        <td><input type="button" 
+                   value="Game Help"
+                   onClick="help()">
+        </input></td>
+    
+            <td> <input type="button"
+                        value="Quit Game"
+                        onClick="clearOut()">
+        </input> </td>
+        </tr>
+
+        <tr>
+            <td><input type=text size=4 name=you>You</td>
+            <td><input type=text size=4 name=you>You</td>
+            <td><input type=text size=4 name=you>You</td>
+        </tr>
+
+    </table>
     </form>
 
+   
 </body>
 
+    
 </html>

@@ -15,21 +15,23 @@
         <script type="text/javascript">
 
             function help() {
-                alert("Help")
+                alert("How to play Tic-Tac-Toe");
             }
     
             function clearOut() {
-                alert("clearOut")
+                document.game.you.value=0;
+                document.game.computer.value=0;  
+                document.game.ties.value=0;    
             }
     
             function playAgain() {
-                alert("playagain")
+                reset()
             }        
         </script>
 </head>
 
 <body>
-    <form name=game>
+    <form name="game">
     <table border=1>
         <tr>
         <td><a href="javascript:yourChoice('A')">
